@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  text-align: left;
+}
+
+h1 {
+  padding: 0;
+  margin-top: 0.4em;
+  margin-left: 4.5vh;
+  font-size: 35vh;
+  color: #011F4B;
+  text-align: justify;
+  line-height: 120%;
+  font-family: 'Nunito', sans-serif;
+}
+
+pre {
+  padding: 0;
+}
