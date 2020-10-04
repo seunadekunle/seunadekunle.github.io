@@ -14,7 +14,7 @@ function About(props) {
                     <p>{props.description4}</p>
                 </div>
 
-                <img src={props.url} alt="portrait of designer" />
+                <img src={props.img_url} alt="seun adekunle" />
             </div>
         </div>
     );
