@@ -2,7 +2,7 @@ import React from 'react';
 import './Projects.css';
 
 function Projects(props) {
-    console.log(props.list);
+    // console.log(props.list);
     const listItems = props.list.map((item) =>
         <div id="project-item">
             <img id="background-image" src={item.img_url}></img>

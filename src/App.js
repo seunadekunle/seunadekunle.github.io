@@ -74,6 +74,7 @@ class App extends Component {
           <Contact img_1={github_image} link_1="https://github.com/seunadekunle" img_2={linkedin_image} link_2="https://www.linkedin.com/in/seun-adekunle/" />
         </div>
 
+
       </div>
     );
   }
