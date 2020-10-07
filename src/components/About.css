@@ -50,15 +50,15 @@
   }
 }
 
-@media(max-width: 600px){
+@media(max-width: 700px){
   .info > img {
-    padding-left: 100%;
+    /* padding-left: 100%; */
     padding-right: 25%;
     max-width: 50%;
-    float: center;
+    /* float: center; */
   }
   
-  .text > p {
+  /* .text > p {
     text-align: center;
     font-size: 2vh;
     width: 100%;
@@ -67,5 +67,5 @@
   .text {
     width: 80%;
     float: center;
-  }
+  } */
 }
