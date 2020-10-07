@@ -11,11 +11,11 @@ function Contact(props) {
                 <p id="contact-text"> and collaborate on projects</p>
             </div>
 
-            <div className="inner">
+            <div className="inner" id="social-images">
                 <a href={props.link_1}>
                     <img src={props.img_1} alt="link to social media" />
                 </a>
-                <a href={props.link_2}  id="social-images">
+                <a href={props.link_2}>
                     <img src={props.img_2} href={props.link_2} alt="link to social media" />
                 </a>
             </div>
