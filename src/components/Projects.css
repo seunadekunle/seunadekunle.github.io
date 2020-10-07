@@ -12,8 +12,8 @@
 }
 
 #background-image {
-  filter: saturate(99%) brightness(30%) hue-rotate(215.68deg);
-  width: 65em;
+  filter: saturate(99%) brightness(25%) hue-rotate(215.68deg);
+  width: 85%;
   height: 8.5em;
   object-fit: cover;
   border-radius: 1em;
@@ -30,9 +30,9 @@
 }
 
 #title {
-  top: 0.25em;
-  left: 7.5em;
-  width: 11em;
+  top: 5%;
+  left: 37.5%;
+  width: 50%;
   font-size: 3.8em;
   font-family: 'Nunito', sans-serif;
   font-weight: 500;
@@ -41,10 +41,38 @@
 }
 
 #description {
-  font-size: 20px;
+  font-size: 1.25em;
   color: #6497B1;
   top: 55%;
   left: -12.5%;
   text-align: right;
   width: 100%;
+}
+
+@media(max-width: 700px){
+
+  .header {
+    font-size: 10vh;
+    text-align: left;
+  }
+
+  #title {
+    top: 12.5%;
+    left: 7.5%;
+    width: 80%;
+    font-size: 2.75em;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 500;
+    color: #B3CDE0;
+    text-align: right;
+  }
+
+  #description {
+    font-size: 1em;
+    color: #6497B1;
+    top: 50%;
+    left: -12.5%;
+    text-align: right;
+    width: 100%;
+  }
 }

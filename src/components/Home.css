@@ -14,6 +14,22 @@ h1 {
   font-family: 'Nunito', sans-serif;
 }
 
-pre {
-  padding: 0;
+
+@media(max-width: 800px){
+  h1 {
+    font-size: 15vh;
+  }
+}
+
+@media(max-width: 700px){
+  h1 {
+    font-size: 11vh;
+  }
+}
+
+@media(max-width: 600px){
+  h1 {
+    margin-top: 1em;
+    font-size: 9.25vh;
+  }
 }

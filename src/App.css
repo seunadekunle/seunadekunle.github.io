@@ -4,6 +4,7 @@
   text-align: center;
   background-color: #B3CDE0;
   font-family: 'Nunito Sans', sans-serif;
+  overflow: visible;
 }
 
 .App {
@@ -41,23 +42,7 @@ Home {
   padding: 1.25em;
 }
 
-@media (max-width: 700px){
-  .nav {
-    overflow: hidden;
-    background: #203b4e;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 2.5%;
-    list-style-type: none;
-    text-transform: lowercase;
-    margin: 0em;
-    padding: 1.25em;
-  }
-}
-#active {
-  box-shadow: 0 0 10px rgba(0,0,0,0.4);  
-}
+
 .nav > li {
   float: right;
   overflow: hidden;
@@ -104,7 +89,7 @@ li > a:hover {
   border-radius: 0.5em;
   border-color: #6497B1;
   border-style: solid;
-  border-width: 1.5px;
+  border-width: 1.25px;
   margin-right: 4em;
 }
 
@@ -112,4 +97,31 @@ li > a:hover {
   color: #B3CDE0;
   background-color: #011F4B;
   border-color: #B3CDE0;
+}
+
+#contact-section {
+  height: 100%;
+  overflow: auto;
+}
+
+@media (max-width: 600px){
+  .nav {
+    position: fixed;
+    top: 0;
+    width: 150%;
+    height: 2.5%;
+  }
+
+  li > a {
+  text-align: center;
+  font-size: .5em;
+  }
+
+  li > button {
+  padding:  1.05em;
+  text-align: center;
+  font-size: 1.15em;
+  text-decoration: none;
+  color: #6497B1;
+  }
 }

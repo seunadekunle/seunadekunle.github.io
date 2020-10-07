@@ -3,7 +3,7 @@ import './About.css';
 
 function About(props) {
     return (
-        <div className="container">
+        <div style={{overflow: "hidden"}} className="container">
             <h1 className="header">{props.text}</h1>
 
             <div className="info">

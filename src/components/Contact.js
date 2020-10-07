@@ -6,7 +6,7 @@ function Contact(props) {
     return (
         <div className="outer">
             <h1 className="header" id="contact-header">get in touch</h1>
-            <div className="text" id="text-div">
+            <div className="text" id="contact-text-container">
                 <p id="contact-text">I am currently looking for opportunities to gain experience</p>
                 <p id="contact-text"> and collaborate on projects</p>
             </div>
@@ -22,10 +22,9 @@ function Contact(props) {
 
             <div className="inner">
                 <button><a href="mailto:seun9008@gmail.com">contact</a></button>
-            </div>
-
-            <div className="footer">
-                <p>built and designed by seun</p>
+                <div className="footer">
+                    <p>built and designed by seun</p>
+                </div>
             </div>
         </div>
 

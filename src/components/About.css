@@ -32,3 +32,40 @@
   margin-bottom: 1.2em;
 }
 
+@media(max-width: 800px){
+  .text {
+    width: 20em;
+    float: center;
+  }
+
+  .text > p {
+    text-align: center;
+    font-size: 2.25vh;
+  }
+
+  .info > img {
+    max-width: 50%;
+    height: auto;
+    float: center;
+  }
+}
+
+@media(max-width: 600px){
+  .info > img {
+    padding-left: 100%;
+    padding-right: 25%;
+    max-width: 50%;
+    float: center;
+  }
+  
+  .text > p {
+    text-align: center;
+    font-size: 2vh;
+    width: 100%;
+  }
+
+  .text {
+    width: 80%;
+    float: center;
+  }
+}

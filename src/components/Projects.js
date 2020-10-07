@@ -5,14 +5,15 @@ function Projects(props) {
     // console.log(props.list);
     const listItems = props.list.map((item) =>
         <div id="project-item">
-            <img id="background-image" src={item.img_url}></img>
+            <a href={item.url}><img id="background-image" src={item.img_url}></img>
             <h2 id="title">{item.title}</h2>
             <h6 id="description">{item.description}</h6>
+            </a>
         </div>
     );
 
     return (
-        <div>
+        <div style={{overflow: "hidden"}}>
             <h1 className="header">{props.text}</h1>
             {listItems}
         </div>
