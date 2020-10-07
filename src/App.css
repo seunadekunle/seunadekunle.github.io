@@ -110,9 +110,16 @@ li > a:hover {
     top: 0;
     width: 150%;
     height: 2.5%;
+    visibility: hidden;
   }
 
-  li > a {
+  #home {
+    visibility: visible;
+    margin-bottom: 20em;
+    margin-top: -1em;
+  }
+
+  /* li > a {
   text-align: center;
   font-size: .5em;
   }
@@ -123,5 +130,5 @@ li > a:hover {
   font-size: 1.15em;
   text-decoration: none;
   color: #6497B1;
-  }
+  } */
 }
