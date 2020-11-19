@@ -2,7 +2,7 @@ export const data = [
   {
     title: "CaffTrack",
     description: "Fitbit OS app to track caffeine intake",
-    img_url: "https://gallery.fitbit.com/media/versa-grey.b4490a4a.png",
+    img_url: "https://raw.githubusercontent.com/seunadekunle/caffTrack/master/screenshots/ionic_1.png",
     url: "https://github.com/seunadekunle/caffTrack",
   },
   {

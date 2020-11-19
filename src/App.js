@@ -25,7 +25,7 @@ class App extends Component {
       <div className="App">
         <div className="nav">
 
-          <li id="action"><a href="https://www.canva.com/design/DAD-03_5V6c/l3eG1z2NTT4J8zJJ3bY5_w/view">resume</a></li>
+          <li id="action"><a href="https://drive.google.com/file/d/1c-GUYz8Z_1-AVkS2deGOxK4_G2vzycIG/view?usp=sharing">resume</a></li>
           <li>
             <Link
               activeClass="active"
