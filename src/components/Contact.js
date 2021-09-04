@@ -1,6 +1,9 @@
 import React from 'react';
 import './Contact.css';
 
+// import icons
+import { ImGithub, ImLinkedin } from 'react-icons/im';
+
 function Contact(props) {
 
     return (
@@ -13,10 +16,10 @@ function Contact(props) {
 
             <div className="inner" id="social-images">
                 <a href={props.link_1}>
-                    <img src={props.img_1} alt="link to social media" />
+                    <ImGithub />
                 </a>
                 <a href={props.link_2}>
-                    <img src={props.img_2} href={props.link_2} alt="link to social media" />
+                    <ImLinkedin />
                 </a>
             </div>
 

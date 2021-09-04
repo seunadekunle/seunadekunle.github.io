@@ -4,7 +4,7 @@
 
 .header {
   font-size: 12vh;
-  color: #011F4B;
+  color: var(--dark);
   text-align: left;
   margin-bottom: 0.6em;
 }
@@ -28,7 +28,7 @@
   line-height: 2;
   margin-left: 4.5vh;
   width: inherit;
-  color: #03396C;
+  color: var(--dark-light);
   margin-bottom: 1.2em;
 }
 
