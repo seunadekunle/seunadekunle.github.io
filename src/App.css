@@ -1,16 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Nunito+Sans&display=swap');
 
+:root {
+  --background: #B3CDE0;
+  --dark: #011F4B;
+  --light: #6497B1;
+  --dark-light: #03396C;
+  --icon-fill: #010d1f;
+}
+
 * {
   text-align: center;
-  background-color: #B3CDE0;
+  background-color: var(--background);
   font-family: 'Nunito Sans', sans-serif;
   overflow: visible;
 }
 
 .App {
   text-align: center;
-  background-color: #B3CDE0;
-  overflow-y: hidden;
+  background-color: var(--background);
+  overflow-y: scroll;
   overflow-x: hidden;
   height: 100%;
 }
@@ -29,80 +37,15 @@ Home {
   margin-bottom: 90em;
 }
 
-.nav {
-  overflow: hidden;
-  background: #B3CDE0;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: 2.5%;
-  list-style-type: none;
-  text-transform: lowercase;
-  margin: 0em;
-  padding: 1.25em;
-}
-
-
-.nav > li {
-  float: right;
-  overflow: hidden;
-  background-color: #333;
-  background: transparent;
-  overflow: hidden;
-  background-color: #333;
-  margin-right: 2em;
-}
-
-li > a {
-  padding:  1.05em;
-  text-align: center;
-  font-size: 1.15em;
-  text-decoration: none;
-  color: #6497B1;
-}
-
-li > button {
-  padding:  1.05em;
-  text-align: center;
-  font-size: 1.15em;
-  text-decoration: none;
-  color: #6497B1;
-}
-
-
-li > a:hover {
-  color: #005b96;
-  cursor: pointer;
-}
-
-#home {
-  float: left;
-  font-weight: 20px;
-  font-size: 1.15em;
-}
-
-#home > a, a:hover{
-  color: #03396C;
-}
-
-#action {
-  border-radius: 0.5em;
-  border-color: #6497B1;
-  border-style: solid;
-  border-width: 2px;
-  margin-right: 4em;
-}
-
-#action > a:hover {
-  color: #B3CDE0;
-  background-color: #011F4B;
-  border-color: #B3CDE0;
-}
-
 #contact-section {
   height: 100%;
   overflow: auto;
 }
+
+#sidebar-section {
+  visibility: hidden;
+}
+
 
 @media (max-width: 600px){
   .nav {
@@ -113,13 +56,15 @@ li > a:hover {
     visibility: hidden;
   }
 
-  #home {
+  #sidebar-section {
     visibility: visible;
-    margin-bottom: 20em;
-    margin-top: -1em;
   }
 
-  /* li > a {
+  #home {
+    visibility: hidden;
+  }
+
+  li > a {
   text-align: center;
   font-size: .5em;
   }
@@ -130,5 +75,5 @@ li > a:hover {
   font-size: 1.15em;
   text-decoration: none;
   color: #6497B1;
-  } */
+  }
 }
