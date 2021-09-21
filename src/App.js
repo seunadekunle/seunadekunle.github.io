@@ -24,11 +24,14 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Navbar/>
-        {/* <Sidebar/> */}
+        <Navbar />
+
+        <div id="sidebar-section">
+          <Sidebar />
+        </div>
 
         <div id="home-section">
-          <Home id="home-page"/>
+          <Home id="home-page" />
         </div>
         <div id="about-section">
           <About text="about" description1={paragraph1}

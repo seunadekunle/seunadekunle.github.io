@@ -4,7 +4,9 @@ import './Navbar.css';
 // import Link from react-scroll library
 import { Link } from "react-scroll";
 
-function Navbar() {
+function Navbar(param) {
+
+  console.log(param.val);
   return (
     <div className="nav">
       <li id="action">

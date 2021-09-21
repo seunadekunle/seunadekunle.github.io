@@ -7,7 +7,7 @@ import { slide as Menu } from 'react-burger-menu';
 export default props => {
   return (
     <Menu right>
-        <Navbar />
+        <Navbar val={1}/>
     </Menu>
   );
 };

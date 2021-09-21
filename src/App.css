@@ -42,8 +42,12 @@ Home {
   overflow: auto;
 }
 
+#sidebar-section {
+  visibility: hidden;
+}
 
-/* @media (max-width: 600px){
+
+@media (max-width: 600px){
   .nav {
     position: fixed;
     top: 0;
@@ -52,10 +56,12 @@ Home {
     visibility: hidden;
   }
 
-  #home {
+  #sidebar-section {
     visibility: visible;
-    margin-bottom: 20em;
-    margin-top: -1em;
+  }
+
+  #home {
+    visibility: hidden;
   }
 
   li > a {
@@ -70,4 +76,4 @@ Home {
   text-decoration: none;
   color: #6497B1;
   }
-} */
+}
