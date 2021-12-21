@@ -9,7 +9,7 @@ import Navbar from './components/Navbar.js';
 import Sidebar from './components/Sidebar.js';
 
 // import assets
-import portrait from './assets/img/img_2.jpg';
+import portrait from './assets/img/download.png';
 
 // import icons
 import { HiMenuAlt3 } from 'react-icons/hi';

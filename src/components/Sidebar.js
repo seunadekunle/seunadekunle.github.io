@@ -8,7 +8,7 @@ import { Link } from "react-scroll";
 
 export default props => {
   return (
-    <Menu right>
+    <Menu right width={ '20%' }>
         <li id="action">
           <a href="https://drive.google.com/file/d/1k2ycekJase8mgPfAJaJkY5yufhzasUCS/view?usp=sharing">
             resume

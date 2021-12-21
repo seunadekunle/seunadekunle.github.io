@@ -10,10 +10,12 @@
 }
 
 .info > img {
-  padding-right: 4em;
-  max-width: 100%;
+  padding: 0;
+  max-width: 27.5%;
   height: auto;
   float: right;
+  margin: 0;
+  margin-right: 3em;
 }
 
 .text {
