@@ -11,9 +11,6 @@ import Sidebar from './components/Sidebar.js';
 // import assets
 import portrait from './assets/img/download.png';
 
-// import icons
-import { HiMenuAlt3 } from 'react-icons/hi';
-
 import { paragraph1, paragraph2, paragraph3, paragraph4 } from './assets/text/description.js';
 import { data } from './assets/text/project_data.js';
 
