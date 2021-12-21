@@ -1,3 +1,7 @@
+* {
+  overflow-y: hidden;
+}
+
 /* Position and sizing of burger button */
 .bm-burger-button {
     position: absolute;
@@ -19,11 +23,12 @@
   height: 50px;
   width: 50px;
   margin: 0.53em;
+  background-color: var(--dark);
 }
 
 /* Color/shape of close button cross */
 .bm-cross {
-  background: var(--dark);
+  background: var(--light);
 }
 
 /*
@@ -37,9 +42,11 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* General sidebar styles */
 .bm-menu {
-  background: NONE;
+  background: var(--dark);
   padding: 2em 1em 0;
+  margin: 0;
   font-size: 1.15em;
+  overflow-y: hidden !important;
 }
 
 /* Morph shape necessary with bubble or elastic */
@@ -49,30 +56,32 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* Wrapper for item list */
 .bm-item-list {
-  color: #000000;
+  background-color: var(--dark);
   padding: 0.8em;
-}
-
-/* Individual item */
-.bm-item {
-  display: inline-block;
 }
 
 /* Styling of overlay */
 .bm-overlay {
-  background: rgba(0, 0, 0, 0.3);
+  background-color: rgb(216, 54, 54);
 }
 
 /* Individual item */
 .bm-item {
   display: inline-block;
-  color: #d1d1d1;
-  margin-bottom: 10px;
+  background-color: var(--dark);
+  color: black;
+  font-size: 2em;
+  margin-top: 1em;
   text-align: left;
   text-decoration: none;
   transition: color 0.2s;
+  overflow-y: hidden;
 }
 
-.bm-item:hover {
-  color: #ffffff;
+
+.bm-item > a {
+  text-align: center;
+  text-decoration: none;
+  color: var(--light);
+  background: transparent;
 }

@@ -27,10 +27,10 @@ render() {
 
   console.log("height")
   return (
-    <div className="App">
+    <div className="App" style={{height : '100%'}}>
       <Navbar />
 
-      <div id="sidebar-section">
+      <div id="sidebar-section" style={{height : '100%'}}>
         <Sidebar />
       </div>
 

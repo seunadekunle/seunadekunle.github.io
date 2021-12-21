@@ -24,7 +24,7 @@
   display: block;
 }
 
-li > a {
+.nav > li > a {
   padding:  1.05em;
   text-align: center;
   font-size: 1.15em;
@@ -32,7 +32,7 @@ li > a {
   color: var(--light);
 }
 
-li > button {
+.nav > li > button {
   padding:  1.05em;
   text-align: center;
   font-size: 1.15em;
@@ -41,7 +41,7 @@ li > button {
 }
 
 
-li > a:hover {
+.nav > li > a:hover {
   color: #005b96;
   cursor: pointer;
 }
