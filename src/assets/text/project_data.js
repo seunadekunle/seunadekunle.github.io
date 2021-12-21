@@ -12,7 +12,9 @@ export const data = [
     url: "https://github.com/seunadekunle/NILI",
   },
   {
-    title: "Rekord",
-    description: "coming soon"
-  }
+    title: "TravelGuide",
+    description: "Post unknown tips for locations",
+    img_url: "https://raw.githubusercontent.com/seunadekunle/TravelGuide/master/app/src/main/ic_launcher-playstore.png",
+    url: "https://github.com/seunadekunle/TravelGuide"
+  },
 ];

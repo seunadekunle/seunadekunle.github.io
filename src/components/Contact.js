@@ -24,7 +24,7 @@ function Contact(props) {
             </div>
 
             <div className="inner">
-                <button><a href="mailto:seun9008@gmail.com">contact</a></button>
+                <button><a href="mailto:seun9008@gmail.com">contact me</a></button>
                 <div className="footer">
                     <p>built and designed by seun</p>
                 </div>

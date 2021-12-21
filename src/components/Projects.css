@@ -1,3 +1,4 @@
+
 .container {
   display: grid;
 }
@@ -10,16 +11,28 @@
 }
 
 #background-image {
-  filter: saturate(99%) brightness(25%) hue-rotate(215.68deg);
-  width: 85%;
-  height: 8.5em;
+  filter: saturate(99%) brightness(12.5%) hue-rotate(215.68deg);
+  width: 32.5em;
+  height: 21em;
   object-fit: cover;
-  border-radius: 1em;
+  border-radius: 1.25em;
   margin-bottom: 1.75em;
 }
 
-#project-item{
+.scroll_wrap {
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  margin-left: 4.5vh;
+}
+
+.project-item{
   position: relative;
+  display: inline-block;
+  width: 40em;
+  height: 50%;
+  margin-left: -3em;
+  z-index: 0;
 }
 
 #title, #description {
@@ -28,49 +41,79 @@
 }
 
 #title {
-  top: 5%;
-  left: 37.5%;
-  width: 50%;
-  font-size: 3.8em;
+  top: 17.5%;
+  width: 100%;
+  padding-left: 1.5em;
+  font-size: 3.75em;
   font-family: 'Nunito', sans-serif;
   font-weight: 500;
   color: var(--background);
-  text-align: right;
+  text-align: left;
 }
 
 #description {
-  font-size: 1.25em;
+  font-size: 1.375em;
   color: var(--light);
-  top: 55%;
-  left: -12.5%;
-  text-align: right;
+  left: 10%;
+  top: 47.5%;
+  text-align: left;  
+  padding-left: 1.5em;
   width: 100%;
 }
 
 @media(max-width: 700px){
 
   .header {
-    font-size: 10vh;
+    font-size: 5vh;
     text-align: left;
   }
 
-  #title {
-    top: 12.5%;
-    left: 7.5%;
-    width: 80%;
-    font-size: 2.75em;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 500;
-    color: var(--background);
-    text-align: right;
+  .project-item{
+    position: relative;
+    display: inline-block;
+    width: 20em;
+    height: 50%;
+    margin-left: -1.5em;
   }
 
-  #description {
-    font-size: 1em;
-    color: var(--light);
-    top: 50%;
-    left: -12.5%;
-    text-align: right;
-    width: 100%;
+  #background-image {
+    filter: saturate(99%) brightness(12.5%) hue-rotate(215.68deg);
+    width: 15em;
+    height: 21em;
+    object-fit: cover;
+    border-radius: 1.25em;
+    margin-bottom: 1.75em;
   }
+
+  .scroll_wrap {
+    margin-left: 2.5vh;
+    margin-right: 0;
+    padding-right: 0;
+  }
+
+  #title {
+    padding: 0;
+    margin-left: 0.875em;
+
+    top: 17.5%;
+    width: 5em;
+    font-size: 3em;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 590;
+    color: var(--background);
+    text-align: center;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    line-height: 1em;
+  }
+  
+  #description {
+    font-size: 1.375em;
+    color: var(--light);
+    top: 47.5%;
+    width: 11em;
+    text-align: center;
+    white-space: pre-wrap;   
+  }
+  
 }

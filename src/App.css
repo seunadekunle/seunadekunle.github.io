@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito&family=Nunito+Sans&display=swap');
 
 :root {
-  --background: #B3CDE0;
+  --background: #bdd8ec;
   --dark: #011F4B;
   --light: #6497B1;
   --dark-light: #03396C;
@@ -48,14 +48,6 @@ Home {
 
 
 @media (max-width: 600px){
-  .nav {
-    position: fixed;
-    top: 0;
-    width: 150%;
-    height: 2.5%;
-    visibility: hidden;
-  }
-
   #sidebar-section {
     visibility: visible;
   }
