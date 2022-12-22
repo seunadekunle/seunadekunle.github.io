@@ -4,19 +4,18 @@
 
 /* Position and sizing of burger button */
 .bm-burger-button {
-    position: absolute;
-    float: right;
-    width: 5%;
-    height: 2.5%;
-    left: 85%;
-    top: 4%;
+  position: absolute;
+  float: right;
+  width: 5%;
+  height: 2.5%;
+  left: 85%;
+  top: 4%;
 }
-  
+
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
   background: var(--dark);
 }
-
 
 /* Position and sizing of clickable cross button */
 .bm-cross-button {
@@ -78,7 +77,6 @@ Note: Beware of modifying this element as it can break the animations - you shou
   transition: color 0.2s;
   overflow-y: hidden;
 }
-
 
 .bm-item > a {
   text-align: center;

@@ -1,7 +1,13 @@
 export const data = [
   {
+    title: "Track",
+    description: "An iOS app to track habits",
+    img_url: "https://raw.githubusercontent.com/ukcs485gFall2022/final-project-client-seunadekunle/main/demo_pictures/Simulator%20Screen%20Shot%20-%20iPhone%2014%20-%202022-12-12%20at%2020.10.27.png",
+    url: "https://github.com/ukcs485gFall2022/final-project-client-seunadekunle",
+  },
+  {
     title: "TravelGuide",
-    description: "Post unknown tips for locations",
+    description: "Post unknown tips for locations on Android",
     img_url: "https://raw.githubusercontent.com/seunadekunle/TravelGuide/master/app/src/main/ic_launcher-playstore.png",
     url: "https://github.com/seunadekunle/TravelGuide"
   },

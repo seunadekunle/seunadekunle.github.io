@@ -1,0 +1,11 @@
+.container {
+  display: grid;
+}
+
+.header {
+  font-size: 10vh;
+  color: var(--dark);
+  text-align: left;
+  margin-bottom: 0.6em;
+}
+

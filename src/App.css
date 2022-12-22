@@ -1,18 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Nunito+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito&family=Nunito+Sans&display=swap");
 
 :root {
   --background: #bdd8ec;
-  --dark: #011F4B;
-  --light: #6497B1;
-  --dark-light: #03396C;
+  --dark: #011f4b;
+  --light: #6497b1;
+  --dark-light: #03396c;
   --icon-fill: #010d1f;
 }
 
 * {
   text-align: center;
   background-color: var(--background);
-  font-family: 'Nunito Sans', sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   overflow: visible;
+  overflow: overlay;
 }
 
 .App {
@@ -46,8 +47,7 @@ Home {
   visibility: hidden;
 }
 
-
-@media (max-width: 600px){
+@media (max-width: 600px) {
   #sidebar-section {
     visibility: visible;
   }

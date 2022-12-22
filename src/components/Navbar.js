@@ -1,11 +1,10 @@
-import React from 'react';
-import './Navbar.css';
+import React from "react";
+import "./Navbar.css";
 
 // import Link from react-scroll library
 import { Link } from "react-scroll";
 
 function Navbar() {
-
   return (
     <div className="nav_wrapper">
       <div className="nav">
@@ -21,7 +20,11 @@ function Navbar() {
             spy={true}
             smooth={true}
             offset={-70}
-            duration={500}>contact</Link></li>
+            duration={500}
+          >
+            contact
+          </Link>
+        </li>
 
         <li>
           <Link
@@ -30,7 +33,24 @@ function Navbar() {
             spy={true}
             smooth={true}
             offset={-70}
-            duration={500}>projects</Link></li>
+            duration={500}
+          >
+            projects
+          </Link>
+        </li>
+        <li>
+          <Link
+            activeClass="active"
+            to="xp-section"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            xp
+          </Link>
+        </li>
+        <li></li>
         <li>
           <Link
             activeClass="active"
@@ -38,7 +58,11 @@ function Navbar() {
             spy={true}
             smooth={true}
             offset={-70}
-            duration={500}>about</Link></li>
+            duration={500}
+          >
+            about
+          </Link>
+        </li>
         <li id="home">
           <Link
             activeClass="active"
@@ -46,10 +70,13 @@ function Navbar() {
             spy={true}
             smooth={true}
             offset={-70}
-            duration={500}><strong>seun</strong></Link></li>
+            duration={500}
+          >
+            <strong>seun</strong>
+          </Link>
+        </li>
       </div>
     </div>
-
   );
 }
 
