@@ -1,5 +1,5 @@
 import React from "react";
-import "./Contact.css";
+import "../css/Contact.css";
 
 // import icons
 import { ImGithub, ImLinkedin } from "react-icons/im";

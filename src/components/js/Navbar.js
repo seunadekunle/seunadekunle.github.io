@@ -1,15 +1,23 @@
 import React from "react";
-import "./Navbar.css";
-
-// import Link from react-scroll library
 import { Link } from "react-scroll";
+import { useHistory } from "react-router-dom";
+
+import Resume from "./Resume.js";
+import "../css/Navbar.css";
 
 function Navbar() {
+  const history = useHistory();
+  const handleGoToResume = (e) => {
+    e.preventDefault()
+    history.push("/resume");
+  }
+
+  
   return (
     <div className="nav_wrapper">
       <div className="nav">
         <li id="action">
-          <a href="https://drive.google.com/file/d/1k2ycekJase8mgPfAJaJkY5yufhzasUCS/view?usp=sharing">
+          <a href="/" onClick={handleGoToResume}>
             resume
           </a>
         </li>

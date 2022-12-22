@@ -1,5 +1,5 @@
 import React from "react";
-import "./Projects.css";
+import "../css/Projects.css";
 
 function Projects(props) {
   const listItems = props.list.map((item) => (

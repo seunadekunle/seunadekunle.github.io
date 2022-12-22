@@ -1,5 +1,5 @@
 import React from "react";
-import "./xp.css";
+import "../css/xp.css";
 
 import {
   VerticalTimeline,

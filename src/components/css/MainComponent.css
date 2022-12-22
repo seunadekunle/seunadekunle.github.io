@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&family=Nunito+Sans&display=swap");
+
+:root {
+  --background: #bdd8ec;
+  --dark: #011f4b;
+  --light: #6497b1;
+  --dark-light: #03396c;
+  --icon-fill: #010d1f;
+}
+
+* {
+  text-align: center;
+  background-color: var(--background);
+  font-family: "Nunito Sans", sans-serif;
+  overflow: visible;
+  overflow: overlay;
+}
+
+.Main {
+  text-align: center;
+  background-color: var(--background);
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+.App-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+Home {
+  margin-bottom: 90em;
+}
+
+#contact-section {
+  height: 100%;
+  overflow: auto;
+}
+
+#sidebar-section {
+  visibility: hidden;
+}
+
+@media (max-width: 600px) {
+  #sidebar-section {
+    visibility: visible;
+  }
+
+  #home {
+    visibility: hidden;
+  }
+}

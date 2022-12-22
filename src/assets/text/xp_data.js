@@ -14,7 +14,7 @@ export const xp_data = [
   },
   {
     title: "Salesforce",
-    subtitle: "B.A.S.E Camp participant",
+    subtitle: "B.A.S.E Camp Participant",
     date: "March 6 - 9, 2022",
     icon: <SiSalesforce />
   },
