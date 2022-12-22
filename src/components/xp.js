@@ -14,11 +14,11 @@ function xp(props) {
   const timeline = props.list.map((item) => (
     <VerticalTimelineElement
       className="vertical-timeline-element--work"
-      contentStyle={{ background: "rgb(1, 31, 75)", color: "#bdd8ec" }}
+      contentStyle={{ background: "rgb(1, 31, 75)", color: "#011f4b" }}
       contentArrowStyle={{ borderRight: "10px solid rgb(1, 31, 75)" }}
       date={item.date}
-      iconStyle={{ background: "rgba(0, 0, 0, 0)", color: "rgb(1, 31, 75)", border: "10px solid rgb(1, 31, 75)" }}
-      icon={<ImAmazon />}
+      iconStyle={{ background: "rgba(0, 0, 0, 0)", color: "rgb(1, 31, 75)", WebkitBoxShadow: "Nnone", boxShadow: "none", border: "3.5px solid rgb(1, 31, 75)" }}
+      icon={item.icon}
     >
       <h3
         className="vertical-timeline-element-title"
@@ -32,9 +32,6 @@ function xp(props) {
       >
         {item.subtitle}
       </h4>
-      <p style={{ background: "rgb(1, 31, 75)", color: "#bdd8ec" }}>
-        {item.content}
-      </p>
     </VerticalTimelineElement>
   ));
 
