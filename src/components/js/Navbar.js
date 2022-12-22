@@ -2,22 +2,24 @@ import React from "react";
 import { Link } from "react-scroll";
 import { useHistory } from "react-router-dom";
 
-import Resume from "./Resume.js";
 import "../css/Navbar.css";
+
 
 function Navbar() {
   const history = useHistory();
-  const handleGoToResume = (e) => {
-    e.preventDefault()
-    history.push("/resume");
-  }
 
-  
+  const toResume = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    e.nativeEvent.stopImmediatePropagation();
+    history.push("/resume");
+  };
+
   return (
     <div className="nav_wrapper">
       <div className="nav">
         <li id="action">
-          <a href="/" onClick={handleGoToResume}>
+          <a href="/" onClick={toResume}>
             resume
           </a>
         </li>

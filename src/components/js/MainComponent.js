@@ -25,7 +25,6 @@ import "../css/MainComponent.css";
 
 class MainComponent extends Component {
   render() {
-
     return (
       <div className="Main" style={{ height: "100%" }}>
         <Navbar />

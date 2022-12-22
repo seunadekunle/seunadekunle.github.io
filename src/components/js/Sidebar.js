@@ -1,35 +1,52 @@
-import React, { Component } from 'react';
-import '../css/Sidebar.css';
+import React, { Component } from "react";
+import "../css/Sidebar.css";
 
-import { slide as Menu } from 'react-burger-menu';
+import { slide as Menu } from "react-burger-menu";
+import { useHistory } from "react-router-dom";
+import { withRouter, RouteComponentProps } from "react-router-dom";
 
 // import Link from react-scroll library
 import { Link } from "react-scroll";
 
-class Sidebar extends Component {
+interface Props extends RouteComponentProps {
+  name: string;
+}
+
+class Sidebar extends React.Component<Props> {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
-      menuOpen: false
-    }
+      menuOpen: false,
+    };
   }
 
+  toResume = (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    e.nativeEvent.stopImmediatePropagation();
+    this.props.history.push("/resume");
+  };
+
   handleStateChange(state) {
-    this.setState({ menuOpen: state.isOpen })
+    this.setState({ menuOpen: state.isOpen });
   }
   closeMenu() {
-    this.setState({ menuOpen: false })
+    this.setState({ menuOpen: false });
   }
 
   toggleMenu() {
-    this.setState(state => ({ menuOpen: !state.menuOpen }))
+    this.setState((state) => ({ menuOpen: !state.menuOpen }));
   }
 
   render() {
     return (
-      <Menu right width={'50%'} style={{ height: '100%' }} isOpen={this.state.menuOpen}
-        onStateChange={(state) => this.handleStateChange(state)}>
-
+      <Menu
+        right
+        width={"50%"}
+        style={{ height: "100%" }}
+        isOpen={this.state.menuOpen}
+        onStateChange={(state) => this.handleStateChange(state)}
+      >
         <li class="mobile_nav">
           <Link
             activeClass="active"
@@ -38,7 +55,10 @@ class Sidebar extends Component {
             smooth={true}
             offset={-70}
             duration={500}
-            onClick={() => this.closeMenu()}>about</Link>
+            onClick={() => this.closeMenu()}
+          >
+            about
+          </Link>
         </li>
         <li class="mobile_nav">
           <Link
@@ -48,7 +68,11 @@ class Sidebar extends Component {
             smooth={true}
             offset={-70}
             duration={500}
-            onClick={() => this.closeMenu()}>xp</Link></li>
+            onClick={() => this.closeMenu()}
+          >
+            xp
+          </Link>
+        </li>
         <li class="mobile_nav">
           <Link
             activeClass="active"
@@ -57,7 +81,11 @@ class Sidebar extends Component {
             smooth={true}
             offset={-70}
             duration={500}
-            onClick={() => this.closeMenu()}>projects</Link></li>
+            onClick={() => this.closeMenu()}
+          >
+            projects
+          </Link>
+        </li>
         <li class="mobilenav">
           <Link
             activeClass="active"
@@ -66,16 +94,19 @@ class Sidebar extends Component {
             smooth={true}
             offset={-70}
             duration={500}
-            onClick={() => this.closeMenu()}>contact</Link></li>
+            onClick={() => this.closeMenu()}
+          >
+            contact
+          </Link>
+        </li>
         <li class="mobile_nav" id="action_mobile">
-          <a href="https://drive.google.com/file/d/1k2ycekJase8mgPfAJaJkY5yufhzasUCS/view?usp=sharing">
+          <a href="/" onClick={this.toResume}>
             resume
           </a>
         </li>
       </Menu>
-
-    )
+    );
   }
 }
 
-export default Sidebar;
+export default withRouter(Sidebar);

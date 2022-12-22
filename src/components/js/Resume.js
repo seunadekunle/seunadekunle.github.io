@@ -1,13 +1,16 @@
-import React from "react";
-import "../css/Projects.css";
-function Resume() {
+import React, { Component } from "react";
+import "../css/Resume.css";
 
+import resume from "../../assets/pdf/resume.pdf";
 
-  return (
-    <div>
-      <h1 className="header">Hey</h1>
-    </div>
-  );
+class Resume extends Component {
+  render() {
+    return (
+      <div className="resume-frame">
+        <iframe className="resume" src={resume} title="Resume"></iframe>
+      </div>
+    );
+  }
 }
 
 export default Resume;
