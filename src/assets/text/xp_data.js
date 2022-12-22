@@ -2,6 +2,8 @@ import React from "react";
 
 import { ImFacebook, ImAmazon } from "react-icons/im";
 import { SiSalesforce } from "react-icons/si";
+import { RiSpaceShipFill } from "react-icons/ri"
+
 
 export const xp_data = [
   {
@@ -20,7 +22,7 @@ export const xp_data = [
     title: "NASA Proposal Writing and Evaluation Experience",
     subtitle: "Participant",
     date: "Sep 9 - 2, 2021",
-    icon: <SiSalesforce />
+    icon: <RiSpaceShipFill />
   },
   {
     title: "Facebook University (Software Engineering)",
