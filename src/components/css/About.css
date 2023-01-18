@@ -43,13 +43,16 @@
 
 @media (max-width: 800px) {
   .text {
-    width: 20em;
+    width: 90%;
+    text-align: center;
     float: center;
+    overflow-x: hidden;
   }
 
   .info {
     display: flex;
     flex-direction: column;
+    text-align: center;
   }
 
   .text > p {
@@ -58,7 +61,8 @@
   }
 
   .info > img {
-    max-width: 50%;
+    max-width: 100%;
+    padding: 3em;
     height: auto;
     float: center;
   }
@@ -71,6 +75,9 @@
   }
 
   .info > img {
-    max-width: 50%;
+    max-width: 100%;
+    padding: 3em;
+    height: auto;
+    float: center;
   }
 }

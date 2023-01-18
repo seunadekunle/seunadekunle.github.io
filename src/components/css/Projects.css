@@ -97,18 +97,16 @@
 
   #title {
     padding: 0;
-    margin-left: 0.875em;
-
     top: 17.5%;
-    width: 5em;
-    font-size: 3em;
+    width: 100%;
+    font-size: 2.5em;
     font-family: "Nunito", sans-serif;
     font-weight: 590;
     color: var(--background);
     text-align: center;
     white-space: pre-wrap;
     word-wrap: break-word;
-    line-height: 1em;
+    margin-bottom: 2em;
   }
 
   #description {
