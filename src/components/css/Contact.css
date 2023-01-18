@@ -14,11 +14,27 @@
   display: block;
 }
 
-.inner > a:hover {
+.outer {
+  position: relative;
+  overflow-y: hidden;
+}
+
+.inner > a {
+  position: absolute;
+  top: 0;
+  bottom: auto;
+}
+
+.inner > button {
+  top: 0;
+  bottom: auto;
+}
+
+.social-images > a:hover {
   opacity: 0.5;
 }
 
-.inner > a > svg {
+.social-images > a > svg {
   margin-right: 2em;
   margin-left: 1em;
   x: 50%;
@@ -26,18 +42,6 @@
   height: auto;
   z-index: 1;
   fill: var(--icon-fill);
-}
-
-.outer {
-  overflow-x: hidden;
-  height: auto;
-}
-
-.inner {
-  position: absolute;
-  width: 100%;
-  margin-top: 9em;
-  height: 1%;
 }
 
 button {
@@ -49,7 +53,7 @@ button {
   border-color: var(--light);
   border-style: solid;
   border-width: 1.5px;
-  margin-top: 4em;
+  margin-top: 1.5em;
   width: 7.5em;
   height: 3em;
 }
@@ -76,8 +80,6 @@ button:hover {
   border: none;
   bottom: 0;
   top: 0.25em;
-  background-color: red;
-  border-radius: 100px;
 }
 
 .footer > p {
@@ -87,8 +89,12 @@ button:hover {
   margin-top: 5em;
 }
 
-#social-images {
-  z-index: 1;
+.social-images {
+  margin-top: 2em;
+}
+
+.social-images > a {
+  margin-right: 10px;
 }
 
 @media (max-width: 1000px) {

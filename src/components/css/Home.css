@@ -1,6 +1,7 @@
 * {
   margin: 0;
   text-align: left;
+  overflow-y: hidden;
 }
 
 h1 {
@@ -12,6 +13,7 @@ h1 {
   text-align: justify;
   line-height: 120%;
   font-family: "Nunito", sans-serif;
+  overflow-y: hidden;
 }
 
 @media (max-width: 1200px) {

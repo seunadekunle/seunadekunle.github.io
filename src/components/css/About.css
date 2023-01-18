@@ -7,25 +7,32 @@
   color: var(--dark);
   text-align: left;
   margin-bottom: 0.6em;
+  overflow-y: hidden;
+}
+
+.info {
+  display: flex;
+  text-align: center;
 }
 
 .info > img {
   padding: 0;
-  max-width: 27.5%;
-  height: auto;
-  float: right;
-  margin: 0;
-  margin-right: 3em;
+  flex: 1;
+  height: 100%;
 }
 
 .text {
-  width: 67%;
-  float: left;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.5em;
+  text-align: center;
 }
 
 .text > p {
   font-family: "Nunito", sans-serif;
-  text-align: left;
   font-size: 4vh;
   line-height: 2;
   margin-left: 4.5vh;
@@ -38,6 +45,11 @@
   .text {
     width: 20em;
     float: center;
+  }
+
+  .info {
+    display: flex;
+    flex-direction: column;
   }
 
   .text > p {
@@ -53,9 +65,12 @@
 }
 
 @media (max-width: 700px) {
+  .info {
+    display: flex;
+    flex-direction: column;
+  }
+
   .info > img {
-    /* padding-left: 100%; */
-    padding-right: 20%;
     max-width: 50%;
   }
 }
