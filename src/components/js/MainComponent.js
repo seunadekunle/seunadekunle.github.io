@@ -10,7 +10,7 @@ import Sidebar from "./Sidebar.js";
 import Xp from "./xp.js";
 
 // import assets
-import portrait from "/Users/seun/dev/portfolio/src/assets/img/download.png";
+import portrait from "../../assets/img/download.png";
 
 import {
   paragraph1,

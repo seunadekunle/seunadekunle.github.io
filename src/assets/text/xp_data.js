@@ -1,11 +1,23 @@
 import React from "react";
 
 import { ImFacebook, ImAmazon } from "react-icons/im";
-import { SiSalesforce } from "react-icons/si";
+import { SiSalesforce, SiAsana, SiAdobe } from "react-icons/si";
 import { RiSpaceShipFill } from "react-icons/ri"
 
 
 export const xp_data = [
+  {
+    title: "Adobe",
+    subtitle: "Research Intern",
+    date: "May 28 — Aug 23, 2024",
+    icon: <SiAdobe />
+  },
+  {
+    title: "Asana",
+    subtitle: "Software Engineering Intern",
+    date: "May 22 – Aug 11, 2023",
+    icon: <SiAsana />
+  },
   {
     title: "Amazon (Lab126)",
     subtitle: "SDE Intern",

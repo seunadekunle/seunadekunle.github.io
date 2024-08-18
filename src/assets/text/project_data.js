@@ -1,5 +1,11 @@
 export const data = [
   {
+    title: "drypyr",
+    description: "Coming soon",
+    img_url: "https://raw.githubusercontent.com/seunadekunle/seunadekunle.github.io/master/src/assets/img/nasa.png",
+    url: "",
+  },
+  {
     title: "Track",
     description: "An iOS app to track habits",
     img_url: "https://raw.githubusercontent.com/ukcs485gFall2022/final-project-client-seunadekunle/main/demo_pictures/Simulator%20Screen%20Shot%20-%20iPhone%2014%20-%202022-12-12%20at%2020.10.27.png",

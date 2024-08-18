@@ -97,6 +97,25 @@ button:hover {
   margin-right: 10px;
 }
 
+button {
+  /* Existing styles */
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.social-images > a > svg {
+  /* Existing styles */
+  transition: all 0.3s ease;
+}
+
+.social-images > a:hover > svg {
+  transform: scale(1.1);
+}
+
 @media (max-width: 1000px) {
   #contact-text {
     width: 100%;
