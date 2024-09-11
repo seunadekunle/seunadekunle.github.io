@@ -2,8 +2,8 @@ export const data = [
   {
     title: "drypyr",
     description: "Coming soon",
-    img_url: "https://raw.githubusercontent.com/seunadekunle/seunadekunle.github.io/master/src/assets/img/nasa.png",
-    url: "",
+    img_url: "https://drypyr.com/assets/drypyr-logo-DTrIkDi2.svg",
+    url: "https://drypyr.com",
   },
   {
     title: "Track",

@@ -7,7 +7,7 @@
   --button-hover-color: #0056b3;
 }
 
-body, html {
+body {
   height: 100%;
   margin: 0;
   padding: 0;
@@ -83,7 +83,7 @@ body, html {
   }
 }
 
-@media (max-width: 480px) {
+/* @media (max-width: 480px) {
   :root {
     --resume-height: 70vh;
   }
@@ -91,4 +91,4 @@ body, html {
   .resume-loading, .resume-error {
     font-size: 1rem;
   }
-}
+} */
