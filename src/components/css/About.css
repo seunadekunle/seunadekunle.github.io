@@ -1,9 +1,12 @@
 .container {
   display: grid;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
 
 .header {
-  font-size: 10vh;
+  font-size: clamp(2rem, 8vw, 10vh);
   color: var(--dark);
   text-align: left;
   margin-bottom: 0.6em;
@@ -13,12 +16,15 @@
 .info {
   display: flex;
   text-align: center;
+  gap: 2rem;
+  align-items: center;
 }
 
 .info > img {
-  padding: 0;
+  max-width: 50%;
+  height: auto;
+  object-fit: cover;
   flex: 1;
-  height: 100%;
 }
 
 .text {
@@ -27,57 +33,51 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: 0.5em;
+  font-size: clamp(0.8rem, 2vw, 1rem);
   text-align: center;
 }
 
 .text > p {
   font-family: "Nunito", sans-serif;
-  font-size: 4vh;
-  line-height: 2;
-  margin-left: 4.5vh;
-  width: inherit;
+  font-size: clamp(1rem, 3vw, 4vh);
+  line-height: 1.6;
+  width: 100%;
   color: var(--dark-light);
   margin-bottom: 1.2em;
 }
 
 @media (max-width: 800px) {
+  .info {
+    flex-direction: column;
+  }
+
   .text {
-    width: 90%;
-    text-align: center;
-    float: center;
+    width: 100%;
     overflow-x: hidden;
   }
 
-  .info {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-
   .text > p {
-    text-align: center;
-    font-size: 2.25vh;
+    font-size: clamp(0.9rem, 2.5vw, 2.25vh);
+    margin-left: 0;
   }
 
   .info > img {
-    max-width: 100%;
-    padding: 3em;
-    height: auto;
-    float: center;
+    max-width: 80%;
+    padding: 1em;
   }
 }
 
-@media (max-width: 700px) {
-  .info {
-    display: flex;
-    flex-direction: column;
+@media (max-width: 600px) {
+  .header {
+    font-size: clamp(1.5rem, 7vw, 2.5rem);
   }
 
   .info > img {
     max-width: 100%;
-    padding: 3em;
-    height: auto;
-    float: center;
+    padding: 0.5em;
+  }
+
+  .text > p {
+    font-size: clamp(0.8rem, 2vw, 1rem);
   }
 }
