@@ -35,7 +35,18 @@ function Navbar() {
             contact
           </Link>
         </li>
-
+        {/* <li>
+          <Link
+            activeClass="active"
+            to="project-section"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            links
+          </Link>
+        </li> */}
         <li>
           <Link
             activeClass="active"
