@@ -1,30 +1,20 @@
-import React, { Component } from "react";
-
-// import components from seperate file
+import React from "react";
+import { BrowserRouter, HashRouter, Route, Switch, Redirect } from "react-router-dom";
 import MainComponent from "./components/js/MainComponent";
 import Resume from "./components/js/Resume";
 
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Redirect,
-} from "react-router-dom";
+const Router = process.env.NODE_ENV === 'production' ? HashRouter : BrowserRouter;
 
-import "./App.css";
-
-class App extends Component {
-  render() {
-    return (
-      <Router>
-        <Switch>
-          <Route exact path="/" component={MainComponent} />
-          <Route path="/resume" component={Resume} />
-          <Redirect to="/" />
-        </Switch>
-      </Router>
-    );
-  }
+function App() {
+  return (
+    <Router>
+      <Switch>
+        <Route exact path="/" component={MainComponent} />
+        <Route path="/resume" component={Resume} />
+        <Redirect to="/" />
+      </Switch>
+    </Router>
+  );
 }
 
 export default App;

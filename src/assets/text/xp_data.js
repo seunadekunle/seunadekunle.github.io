@@ -37,13 +37,7 @@ export const xp_data = [
     icon: <RiSpaceShipFill />,
   },
   {
-    title: "Facebook University (Software Engineering)",
-    subtitle: "Intern",
-    date: "Jun. 21 – Aug. 13, 2021",
-    icon: <ImFacebook />,
-  },
-  {
-    title: "Facebook University (Software Engineering)",
+    title: "Meta University (Software Engineering)",
     subtitle: "Intern",
     date: "Jun. 21 – Aug. 13, 2021",
     icon: <ImFacebook />,
