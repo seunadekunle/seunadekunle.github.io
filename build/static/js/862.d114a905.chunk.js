@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkportfolio=self.webpackChunkportfolio||[]).push([[862],{4862:(e,f,p)=>{e.exports=p.p+"static/media/resume.08fe9d46d8f2ecc2cf58.pdf"}}]);
