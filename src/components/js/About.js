@@ -1,24 +1,26 @@
-import React from "react";
+import React, { Component } from "react";
 import "../css/About.css";
 
-function About(props) {
-  return (
-    <div className="aboutContainer">
-      <h1 className="header">{props.text}</h1>
+class About extends Component {
+  render() {
+    return (
+      <div className="aboutContainer">
+        <h1 className="header">{this.props.text}</h1>
 
-      <div className="info">
-        <div className="text">
-          {[props.description1, props.description2, props.description3, props.description4]
-            .filter(Boolean)
-            .map((description, index) => (
-              <p key={index}>{description}</p>
-            ))}
+        <div className="info">
+          <div className="text">
+            {[this.props.description1, this.props.description2, this.props.description3, this.props.description4]
+              .filter(Boolean)
+              .map((description, index) => (
+                <p key={index}>{description}</p>
+              ))}
+          </div>
+
+          <img src={this.props.img_url} alt="Seun Adekunle" />
         </div>
-
-        <img src={props.img_url} alt="Seun Adekunle" />
       </div>
-    </div>
-  );
+    );
+  }
 }
 
 export default About;

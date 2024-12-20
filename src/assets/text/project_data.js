@@ -1,5 +1,11 @@
 export const data = [
   {
+    title: "StyleClassifier",
+    description: "A machine learning model that classifies clothing styles and fashion trends",
+    img_url: "https://drypyr.com/assets/drypyr-logo-DTrIkDi2.svg",
+    url: "https://github.com/seunadekunle/final_phase_1",
+  },
+  {
     title: "drypyr",
     description: "Coming soon",
     img_url: "https://drypyr.com/assets/drypyr-logo-DTrIkDi2.svg",
