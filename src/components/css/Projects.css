@@ -25,7 +25,6 @@
 .scroll_wrap {
   overflow-x: scroll;
   overflow-y: hidden;
-  white-space: nowrap;
   margin-left: 4.5vh;
 }
 
@@ -36,13 +35,15 @@
   height: 50%;
   margin-left: -3em;
   z-index: 0;
-  overflow: hidden;
+  overflow: visible;
 }
 
 #title,
 #description {
   position: absolute;
   background: none;
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
 
 #title {
@@ -63,7 +64,9 @@
   top: 47.5%;
   text-align: left;
   padding-left: 1.5em;
-  width: 100%;
+  width: 80%;
+  max-width: 25em;
+  line-height: 1.4;
 }
 
 @media (max-width: 700px) {
@@ -113,8 +116,13 @@
     font-size: 1.375em;
     color: var(--light);
     top: 47.5%;
-    width: 9em;
+    width: 80%;
+    max-width: 15em;
     text-align: center;
     white-space: pre-wrap;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 1.4;
+    padding-left: 0;
   }
 }
