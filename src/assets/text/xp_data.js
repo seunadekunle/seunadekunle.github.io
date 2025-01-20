@@ -3,7 +3,8 @@ import React from "react";
 import { ImFacebook, ImAmazon } from "react-icons/im";
 import { SiSalesforce, SiAsana, SiAdobe } from "react-icons/si";
 import { RiSpaceShipFill } from "react-icons/ri";
-import { FaGoogle } from "react-icons/fa";
+import { FaGoogle, FaMeta } from "react-icons/fa6";
+
 
 export const xp_data = [
   {
@@ -40,7 +41,7 @@ export const xp_data = [
     title: "Meta University (Software Engineering)",
     subtitle: "Intern",
     date: "Jun. 21 – Aug. 13, 2021",
-    icon: <ImFacebook />,
+    icon: <FaMeta />,
   },
   {
     title: "Google CSSI",

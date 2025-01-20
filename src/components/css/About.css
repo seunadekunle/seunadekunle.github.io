@@ -57,7 +57,7 @@
   }
 
   .text > p {
-    font-size: clamp(0.9rem, 2.5vw, 2.25vh);
+    font-size: clamp(2rem, 4vw, 4vh);
     margin-left: 0;
   }
 
@@ -78,6 +78,6 @@
   }
 
   .text > p {
-    font-size: clamp(0.8rem, 2vw, 1rem);
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
   }
 }

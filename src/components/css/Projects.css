@@ -64,7 +64,7 @@
   top: 47.5%;
   text-align: left;
   padding-left: 1.5em;
-  width: 80%;
+  width: 70%;
   max-width: 25em;
   line-height: 1.4;
 }
@@ -78,14 +78,14 @@
   .project-item {
     position: relative;
     display: inline-block;
-    width: 20em;
+    width: 22.5em;
     height: 50%;
     margin-left: -1.5em;
   }
 
   #background-image {
     filter: saturate(99%) brightness(12.5%) hue-rotate(215.68deg);
-    width: 15em;
+    width: 22.5em;
     height: 21em;
     object-fit: cover;
     border-radius: 1.25em;
